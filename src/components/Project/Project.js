@@ -15,6 +15,7 @@ const styles = {
 	projectCard: {
 		backgroundColor: '#edde5a',
 		display: 'flex',
+		flexDirection: 'column',
 		minHeight: 300,
 	},
 	info: {
@@ -25,8 +26,8 @@ const styles = {
 		margin: '2px 16px',
 	},
 	thumbnail: {
-		width: 150,
 		minWidth: 150,
+		minHeight: '50vmin',
 	},
 	links: {
 		marginTop: 2,

@@ -16,6 +16,8 @@ class Profile extends Component {
                     <Link to="#">Projects</Link>
                     <Link to="#">About</Link>
                     <Link to="#">Contact</Link>
+                    <Link to="#">LinkedIn</Link>
+                    <Link to="#">GitHub </Link>
                 </div>
             </div>
         );

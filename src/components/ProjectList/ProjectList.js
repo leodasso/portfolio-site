@@ -8,7 +8,7 @@ import projectList from '../../projects/projects.index';
 const styles = {
 
 	projectList: {
-		margin: '12px 40px',
+		margin: '120px 40px',
 	}
 }
 
@@ -26,7 +26,7 @@ class ProjectList extends Component {
 
 		return (
 			<div className={classes.projectList}>
-				<Grid container spacing={16}>
+				<Grid container spacing={32}>
 				{
 					projectList.map(project => (
 						<Project projectData={project} />
