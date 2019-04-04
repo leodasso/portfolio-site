@@ -1,10 +1,16 @@
+:root {
+  --purple: #866fac;
+  --bg-purple: #cab9e4;
+  box-sizing: border-box;
+}
+
 html {
 
-  background-color: #866fac;
-  background: linear-gradient( white, white, #866fac, #866fac, #866fac, #866fac);
+  background: linear-gradient( white, white, var(--bg-purple), var(--bg-purple),var(--bg-purple), white);
   background-repeat: no-repeat;
   margin-bottom: 0px;
   padding-bottom: 45px;
+  min-height: 600px;
 }
 
 .App {
@@ -19,7 +25,7 @@ html {
   font-family: 'Permanent Marker', cursive;
   font-size: 6rem;
   margin: 6px;
-  color: #7b659e;
+  color: var(--purple);
   transform: skew( 0deg, -5deg);
 
 }
