@@ -15,8 +15,8 @@ html {
 
 .App {
   text-align: center;
-  margin-left: 24px;
-  margin-right: 24px;
+  max-width: 900px;
+  margin: 12px auto;
 }
 
 .headline {

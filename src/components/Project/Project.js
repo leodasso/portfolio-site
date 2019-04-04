@@ -42,17 +42,6 @@ class Project extends Component {
 		this.props.dispatch({type:'FETCH_TAGS'});
 	}
 
-	/** Display a button. Checks if the link is empty or null, and if it is,
-	 * will not display anything. If there is a link to display, it will use
-	 * the display name as the 'visible to the user' text
-	 */
-	conditionalRenderButton(displayName, link) {
-		if (link === '' || link === null ) {
-			return '';
-		}
-		return <ProjectButton name={displayName} link={link} />;
-	}
-
 	// Conditionally renders the date. Uses a nice date formatter for if the 
 	// input date isnt null.
 	renderDate(dateString) {
@@ -83,7 +72,7 @@ class Project extends Component {
 		const classes = this.props.classes;
 		const project = this.props.projectData;
 		let thumbnailPath = "images/default_thumbnail.png";
-		if (project.thumbnail != null) {
+		if (project && project.thumbnail) {
 			thumbnailPath = "images/" + project.thumbnail;
 		}
 
@@ -96,19 +85,19 @@ class Project extends Component {
 						title="my happy project"
 					/>
 					<CardContent className={classes.info}>
-						{this.renderDate(project.date_completed)}
+						{project.date && this.renderDate(project.date)}
 						<div className="project-header">
-							<div className="title">{project.name}</div>
+							<div className="title">{project.title}</div>
 							
 							{this.renderTag()}
 						</div>
 						<Divider />
 						<div className="info-body">
 							<Grid container spacing={8} className={classes.links}>
-								{this.conditionalRenderButton('GitHub', project.github)}
-								{this.conditionalRenderButton('Website', project.website)}
+								{project.github && <ProjectButton name={'GitHub'} link={project.github} />}
+								{project.deploy && <ProjectButton name={'Visit'} link={project.deploy} />}
 							</Grid>
-							<p className="description">{project.description}</p>
+							<p className="description">{project.blurb}</p>
 							
 						</div>
 					</CardContent>

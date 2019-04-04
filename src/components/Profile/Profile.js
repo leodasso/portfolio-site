@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Profile.css';
+import { Link } from 'react-router-dom';
 
 class Profile extends Component {
     
@@ -12,9 +13,9 @@ class Profile extends Component {
                     <h2 className="headline">DASSO</h2>
                 </div>
                 <div className="profile-info">
-                    <p>Full-stack developer</p>
-                    <p>Make it work</p>
-                    <p>Make it purdy</p>
+                    <Link to="#">Projects</Link>
+                    <Link to="#">About</Link>
+                    <Link to="#">Contact</Link>
                 </div>
             </div>
         );
