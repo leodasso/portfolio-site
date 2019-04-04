@@ -1,0 +1,16 @@
+.Profile {
+    padding: 30px;
+    min-height: 200px;
+    color: #7b659e;
+
+    /* Flex display */
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 24px;
+}
+
+.info {
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}

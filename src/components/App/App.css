@@ -1,0 +1,25 @@
+html {
+
+  background-color: #866fac;
+  background: linear-gradient( white, white, #866fac, #866fac, #866fac, #866fac);
+  background-repeat: no-repeat;
+  margin-bottom: 0px;
+  padding-bottom: 45px;
+}
+
+.App {
+  text-align: center;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.headline {
+  text-align: left;
+  line-height: .7;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 6rem;
+  margin: 6px;
+  color: #7b659e;
+  transform: skew( 0deg, -5deg);
+
+}
