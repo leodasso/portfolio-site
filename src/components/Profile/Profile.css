@@ -22,5 +22,7 @@
 
 .profile-name {
     margin-top: 2px;
+    margin-bottom: 14px;
+    transform: translateY(-18px);
     width: 100%;
 }

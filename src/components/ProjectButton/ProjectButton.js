@@ -13,7 +13,6 @@ const styles = {
         flexGrow: 2,
     },
     button: {
-        color: 'rgba(0, 0, 0, .75)',
         width: '100%',
     },
 }
