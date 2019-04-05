@@ -8,7 +8,7 @@ class Profile extends Component {
     render() {
         return (
             <div className="Profile">
-                <Grid container spacing={32}>
+                <Grid container spacing={8}>
                     <Grid item sm={12} md={6}>
                         <div className="profile-name">
                             {/* These are placed in sep elements because I want the wrapping effect */}

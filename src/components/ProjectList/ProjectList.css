@@ -1,0 +1,12 @@
+
+@media (min-width: 500px) {
+    .project-list {
+        margin: 12em 3em;
+    }
+}
+
+@media (max-width: 500px) {
+    .project-list {
+        margin: 8em 1.2em;
+    }
+}

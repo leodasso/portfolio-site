@@ -18,13 +18,31 @@ html {
   margin-top: 0px;
 }
 
+@media (max-width: 400px) {
+  .headline {
+    font-size: 4em;
+  }
+}
+
+@media (min-width: 400px) {
+  .headline {
+    font-size: 6em;
+
+  }
+}
+
+@media (min-width: 800px) {
+  .headline {
+    font-size: 9em;
+
+  }
+}
+
 .headline {
   text-align: left;
   line-height: .7;
   font-family: 'Permanent Marker', cursive;
-  font-size: 6em;
   margin: 6px;
   color: var(--purple);
   transform: skew( 0deg, -5deg);
-
 }
