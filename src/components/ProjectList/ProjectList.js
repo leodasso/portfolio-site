@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Project from '../Project/Project';
 import {connect} from 'react-redux';
 import Grid from '@material-ui/core/Grid';
-import projectList from '../../projects/projects.index';
+import {featuredProjects} from '../../projects/projects.index';
 import './ProjectList.css';
 
 
@@ -14,7 +14,7 @@ class ProjectList extends Component {
 			<div className="project-list">
 				<Grid container spacing={32}>
 				{
-					projectList.map((project, index) => (
+					featuredProjects.map((project, index) => (
 						<Project key={index} projectData={project} />
 					))
 				}
