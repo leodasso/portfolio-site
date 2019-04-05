@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Main from '../Main/Main';
-import Admin from '../Admin/Admin';
  
 
 class App extends Component {
@@ -12,7 +11,10 @@ class App extends Component {
       <Router>
       <div className="App">
         <Route exact path="/" component={Main}/>
-        <Route exact path="/admin" component={Admin}/>
+        <Route exact path="/home" component={Main}/>
+        <Route exact path="/projects" component={Main}/>
+        <Route exact path="/contact" component={Main}/>
+        <Route exact path="/resume" component={Main}/>
       </div>
       </Router>
     );

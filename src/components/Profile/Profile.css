@@ -26,3 +26,7 @@
     transform: translateY(-18px);
     width: 100%;
 }
+
+.nav-link {
+    margin: 12px;
+}
