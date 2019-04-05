@@ -15,51 +15,6 @@ import { takeEvery, takeLatest, put as dispatch } from 'redux-saga/effects';
 
 import axios from 'axios';
 
-// Saga for fetching project data from the server & updating the store
-function* fetchProjects() {
-
-	try {
-		const response = yield axios.get('/portfolio');
-		yield dispatch({type:'SET_PROJECTS', payload: response.data});
-	}
-	catch (error) {
-		console.log('error fetching projects', error);
-	}
-}
-
-// Saga which fetches the list of tags (html, css, etc) from the server,
-// and then updates the store with them.
-function* fetchTags() {
-	try{
-		const response = yield axios.get('/tags');
-		yield dispatch({type:'SET_TAGS', payload: response.data});
-	}
-	catch (error) {
-		console.log('error fetching tags', error);
-	}
-}
-
-function* deleteProject(action) {
-
-	try{
-		yield axios.delete('/portfolio/' + action.payload);
-		yield dispatch({type: 'FETCH_PROJECTS'});
-	}
-	catch (error) {
-		console.log('error deleting project with id ' + action.payload, error);
-	}
-}
-
-
-// Create the rootSaga generator function
-function* rootSaga() {
-
-	yield takeEvery('FETCH_PROJECTS', fetchProjects);
-	// every single project instance will call this action,
-	// so we only want to take the latest to fetch tags.
-	yield takeLatest('FETCH_TAGS', fetchTags);
-	yield takeEvery('DELETE_PROJECT', deleteProject);
-}
 
 // Create sagaMiddleware
 const sagaMiddleware = createSagaMiddleware();
@@ -93,9 +48,6 @@ const storeInstance = createStore(
 	// Add sagaMiddleware to our store
 	applyMiddleware(sagaMiddleware, logger),
 );
-
-// Pass rootSaga into our sagaMiddleware
-sagaMiddleware.run(rootSaga);
 
 ReactDOM.render(<Provider store={storeInstance}><App /></Provider>, 
 	document.getElementById('root'));

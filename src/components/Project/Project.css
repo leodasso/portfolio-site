@@ -6,6 +6,31 @@
     height: 54px;
 }
 
+img {
+    object-fit: cover;
+
+}
+
+.card-bg {
+    background-color: red;
+    height: 50vmax;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url('/images/default_thumbnail.png');
+    margin-bottom: 44px;
+}
+
+.info-card {
+    width: 60%;
+    min-width: 300px;
+    background-color: yellow;
+    padding: 24px;
+    box-shadow: 0px 14px 44px rgba(0, 0, 0, 0.609);
+    transform: translateY(24px);
+
+}
+
 .tag {
     background-color: rgba(0, 0, 0, .1);
     border-radius: 25px;

@@ -28,8 +28,8 @@ class ProjectList extends Component {
 			<div className={classes.projectList}>
 				<Grid container spacing={32}>
 				{
-					projectList.map(project => (
-						<Project projectData={project} />
+					projectList.map((project, index) => (
+						<Project key={index} projectData={project} />
 					))
 				}
 				</Grid>
