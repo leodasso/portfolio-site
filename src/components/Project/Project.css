@@ -1,9 +1,5 @@
 .project-header {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-content: center;
-    height: 54px;
+    text-align: center;
 }
 
 img {
@@ -26,7 +22,7 @@ img {
     min-width: 300px;
     background-color: yellow;
     padding: 24px;
-    box-shadow: 0px 14px 44px rgba(0, 0, 0, 0.609);
+    box-shadow: 0px 14px 44px rgba(0, 0, 0, 0.418);
     transform: translateY(24px);
 
 }

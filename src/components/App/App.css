@@ -6,8 +6,7 @@
 
 html {
 
-  background: linear-gradient( white, white, var(--bg-purple), var(--bg-purple),var(--bg-purple), white);
-  background-repeat: no-repeat;
+  background-color: var(--bg-purple);
   margin-bottom: 0px;
   padding-bottom: 45px;
   min-height: 600px;
@@ -16,14 +15,14 @@ html {
 .App {
   text-align: center;
   max-width: 1000;
-  margin: 12px auto;
+  margin-top: 0px;
 }
 
 .headline {
   text-align: left;
   line-height: .7;
   font-family: 'Permanent Marker', cursive;
-  font-size: 6rem;
+  font-size: 6em;
   margin: 6px;
   color: var(--purple);
   transform: skew( 0deg, -5deg);
