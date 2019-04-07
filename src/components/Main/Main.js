@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Profile from '../Profile/Profile';
 import ProjectList from '../ProjectList/ProjectList';
+import Bio from '../Bio/Bio';
  
 class App extends Component {
   // Renders the entire app on the DOM
@@ -8,6 +9,7 @@ class App extends Component {
     return (
       <div>
           <Profile />
+          <Bio />
           <ProjectList />
       </div>
     );

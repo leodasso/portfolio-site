@@ -1,0 +1,6 @@
+.bio {
+    color: white;
+    background-color: var(--purple);
+    min-height: 200px;
+    padding: 24px 40px;
+}
