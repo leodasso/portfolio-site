@@ -1,7 +1,13 @@
 .bio {
-    color: var(--text-brown);
-    background-color: var(--purple);
-    background-image: url('https://i.imgur.com/1tkOkyL.png');
+    color: white;
     min-height: 200px;
     padding: 24px 40px;
+    max-width: 600px;
+    margin: 12px auto;
+}
+
+.bio-bg {
+    background-image: url('https://i.imgur.com/3qtZwVX.png');
+    min-height: 2000px;
+    width: 3000px;
 }
