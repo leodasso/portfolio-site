@@ -1,6 +1,7 @@
 .bio {
-    color: white;
+    color: var(--text-brown);
     background-color: var(--purple);
+    background-image: url('https://i.imgur.com/1tkOkyL.png');
     min-height: 200px;
     padding: 24px 40px;
 }

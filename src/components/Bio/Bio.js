@@ -1,9 +1,5 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
 import './Bio.css';
-
-// Material UI
-import Grid from "@material-ui/core/Grid";
 
 
 class Bio extends Component {
@@ -11,18 +7,25 @@ class Bio extends Component {
   render() {
 
     return (
-      <div className="bio">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-          culpa qui officia deserunt mollit anim id est laborum
-      </div>
+
+        <div className="bio">
+
+          <p>Hi, I'm Leo! In 2002, my middle school friend introduced
+          me to the programming language on the TI-86 calculator. Since then, I've been fascinated by the
+          world of software and computing.</p>
+          <p>
+           I studied illustration in college with the ambition of
+          getting into game development, although I maintained my personal practice of programming throughout.
+          I learned so much in my time developing indie games, and I'm grateful that I could work with the
+          people I did who taught me so much. My interest now lies in web development, and bringing micro-joys
+          into peoples' experiences on the web.
+          </p>
+        </div>
+      
+
     );
   }
 }
 
-const reduxMap = reduxState => reduxState;
 
-export default connect(reduxMap)(Bio);
+export default Bio;
