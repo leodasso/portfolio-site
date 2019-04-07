@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import ProjectButton from "../ProjectButton/ProjectButton";
 import { connect } from "react-redux";
+import ProjectInfoCard from "../ProjectInfoCard/ProjectInfoCard";
 import "./Project.css";
-import niceDate from '../../niceDate';
+import {Parallax, Background } from 'react-parallax';
 
 // Material UI
 import Grid from "@material-ui/core/Grid";
@@ -27,27 +27,14 @@ class Project extends Component {
 
     return (
       <Grid item sm={12} lg={6}>
+
+        <Parallax>
         <div className="card-bg" style={this.cardBgStyle}>
 
-            <div className="info-card">
-              {project.date && <p className="date">{niceDate(project.date)}</p>}
-              <div className="project-header">
-                <div className="title">{project.title}</div>
-              </div>
-              <div className="info-body">
-                <p className="description">{project.blurb}</p>
-                <Grid container spacing={8}>
-                  {project.github && (
-                    <ProjectButton name={"GitHub"} link={project.github} />
-                  )}
-                  {project.deploy && (
-                    <ProjectButton name={"Visit"} link={project.deploy} />
-                  )}
-                </Grid>
-              </div>
-            </div>
+            <ProjectInfoCard projectData={project} />
           
         </div>
+        </Parallax>
       </Grid>
     );
   }

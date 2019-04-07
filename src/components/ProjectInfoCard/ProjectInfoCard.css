@@ -1,0 +1,54 @@
+.info-card {
+    color: var(--text-brown);
+    background-color: var(--yellow);
+    padding: 24px;
+    max-width: 460px;
+    box-shadow:  0px 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.info-body {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+}
+
+.date {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 14px 6px;
+}
+
+.title {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 24px;
+    font-weight: 100;
+    margin: 2px;
+}
+
+@media (min-width: 400px) {
+    .info-card {
+        width: 60%;
+        min-width: 250px;    
+        transform: translateY(24px);
+    }
+}
+
+@media (max-width: 400px) {
+    .info-card {
+        width: 75%;
+        min-width: 100px;    
+        transform: translateY(80px);
+    }
+}
