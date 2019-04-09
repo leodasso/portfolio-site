@@ -10,8 +10,8 @@
 }
 
 .profile-info {
-    font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    margin: 8px 22px;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -25,17 +25,4 @@
     margin-bottom: 14px;
     transform: translateY(-18px);
     width: 100%;
-}
-
-.nav-link {
-    margin: 12px;
-    font-size: 18px;
-    font-family: 'Permanent Marker', cursive;
-    color: var(--purple);
-    text-decoration: none;
-
-}
-
-.Profile a:link {
-    text-decoration: none;
 }

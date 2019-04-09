@@ -1,0 +1,16 @@
+.nav-button {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--purple);
+    font-size: 18px;
+    transition: 200ms;
+    padding: 12px;
+    cursor: pointer;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.nav-button.hover {
+    background-color: var(--yellow);
+    color: var(--text-brown);
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.13);
+}

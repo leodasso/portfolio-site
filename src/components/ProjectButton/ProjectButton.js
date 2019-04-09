@@ -17,7 +17,7 @@ const styles = {
     },
 }
 
-class Project extends Component {
+class ProjectButton extends Component {
 
     handleClick = () => {
 
@@ -43,4 +43,4 @@ class Project extends Component {
     }
 }
 
-export default withStyles(styles)(Project);
+export default withStyles(styles)(ProjectButton);
