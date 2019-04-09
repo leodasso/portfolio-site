@@ -9,7 +9,7 @@ img {
 .card-bg {
     background-color: red;
     background-size: cover;
-    height: 50vmax;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -17,7 +17,7 @@ img {
     border-radius: 4px;
     box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.13);
 }
-=
+
 
 @media (max-width: 400px) {
     .card-bg{

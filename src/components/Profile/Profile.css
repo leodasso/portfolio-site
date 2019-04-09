@@ -29,4 +29,13 @@
 
 .nav-link {
     margin: 12px;
+    font-size: 18px;
+    font-family: 'Permanent Marker', cursive;
+    color: var(--purple);
+    text-decoration: none;
+
+}
+
+.Profile a:link {
+    text-decoration: none;
 }
