@@ -7,7 +7,7 @@ img {
 }
 
 .card-bg {
-    background-color: red;
+    background-color: var(--purple);
     background-size: cover;
     background-position: center;
     height: 400px;
