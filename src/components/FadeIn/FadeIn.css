@@ -1,0 +1,13 @@
+
+.fade {
+    transition: 400ms;
+}
+
+.fade.end {
+    opacity: 1;
+}
+
+.fade.begin {
+    opacity: 0;
+    transform: translateY(-25px);
+}

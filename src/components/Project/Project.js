@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import ProjectInfoCard from "../ProjectInfoCard/ProjectInfoCard";
 import "./Project.css";
-import {Parallax, Background } from 'react-parallax';
 
 // Material UI
 import Grid from "@material-ui/core/Grid";
+import FadeIn from "../FadeIn/FadeIn";
 
 class Project extends Component {
 
@@ -23,18 +23,15 @@ class Project extends Component {
   render() {
     const project = this.props.projectData;
 
-    console.log(this.props.projectData.image);
-
     return (
       <Grid item sm={12} md={6}>
-
-        <Parallax>
-        <div className="card-bg" style={this.cardBgStyle}>
-
-            <ProjectInfoCard projectData={project} />
-          
-        </div>
-        </Parallax>
+        <FadeIn delay={this.props.delay}>
+          <div className="card-bg" style={this.cardBgStyle}>
+              <ProjectInfoCard 
+                projectData={project} 
+                delay={this.props.delay + 500}/>
+          </div>
+        </FadeIn>
       </Grid>
     );
   }

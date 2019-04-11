@@ -17,7 +17,10 @@ class ProjectList extends Component {
 				<Grid container spacing={32}>
 				{
 					allProjects.map((project, index) => (
-						<Project key={index} projectData={project} />
+						<Project 
+							key={index} 
+							projectData={project} 
+							delay={600 + 300 * index}/>
 					))
 				}
 				</Grid>

@@ -4,6 +4,7 @@ import './Bio.css';
 import profilePic from '../../images/leo_profile.jpg';
 import ParallaxContainer from "../ParallaxContainer/ParallaxContainer";
 import PageSetter from "../PageSetter";
+import FadeIn from "../FadeIn/FadeIn";
 
 class Bio extends Component {
 
@@ -11,6 +12,7 @@ class Bio extends Component {
 
 		return (
 
+			<FadeIn delay={500}>
 			<ParallaxContainer>
 				<div className="bio">
 					<PageSetter page="about" />
@@ -44,6 +46,7 @@ class Bio extends Component {
 					</iframe>
 				</div>
 			</ParallaxContainer>
+			</FadeIn>
 		);
 	}
 }

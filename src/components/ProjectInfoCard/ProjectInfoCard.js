@@ -6,6 +6,7 @@ import niceDate from "../../niceDate";
 
 // Material UI
 import Grid from "@material-ui/core/Grid";
+import FadeIn from "../FadeIn/FadeIn";
 
 class ProjectInfoCard extends Component {
 
@@ -14,7 +15,7 @@ class ProjectInfoCard extends Component {
     const project = this.props.projectData;
 
     return (
-      <div className="info-card">
+      <FadeIn delay={this.props.delay} className="info-card">
         {project.date && <p className="date">{niceDate(project.date)}</p>}
         <div className="project-header">
           <div className="title">{project.title}</div>
@@ -30,7 +31,7 @@ class ProjectInfoCard extends Component {
             )}
           </Grid>
         </div>
-      </div>
+      </FadeIn>
     );
   }
 }
