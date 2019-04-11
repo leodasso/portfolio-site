@@ -7,12 +7,12 @@
 
 @media (min-width: 500px) {
     .footer{
-        padding: 2em 3.5em;
+        padding: 2em 4em;
     }
 }
 
 @media (max-width: 500px) {
     .footer{
-        padding: 2em 2em;
+        padding: 2em 3em;
     }
 }
