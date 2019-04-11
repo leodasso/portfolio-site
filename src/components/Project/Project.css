@@ -9,6 +9,7 @@ img {
 .card-bg {
     background-color: red;
     background-size: cover;
+    background-position: center;
     height: 400px;
     display: flex;
     justify-content: center;
