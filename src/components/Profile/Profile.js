@@ -28,19 +28,19 @@ class Profile extends Component {
 					</Grid>
 					<Grid item sm={12} md={6}>
 						<div className="profile-info">
-							<NavButton onClick={this.sendTo("/projects")}>
+							<NavButton onClick={this.sendTo("/projects")} page="projects">
 								Projects
 							</NavButton>
 
-							<NavButton onClick={this.sendTo("/about")}>
+							<NavButton onClick={this.sendTo("/about")} page="about">
 								About
 							</NavButton>
 
-							<NavButton onClick={this.sendTo("/contact")}>
+							<NavButton onClick={this.sendTo("/contact")} page="contact">
 								Contact
 							</NavButton>
 
-							<NavButton onClick={this.sendTo("/resume")}>
+							<NavButton onClick={this.sendTo("/resume")} page="resume">
 								Resume
 							</NavButton>
 

@@ -3,6 +3,7 @@ import './Bio.css';
 
 import profilePic from '../../images/leo_profile.jpg';
 import ParallaxContainer from "../ParallaxContainer/ParallaxContainer";
+import PageSetter from "../PageSetter";
 
 class Bio extends Component {
 
@@ -12,6 +13,7 @@ class Bio extends Component {
 
 			<ParallaxContainer>
 				<div className="bio">
+					<PageSetter page="about" />
 					<img 
 						src={profilePic} 
 						className="profile-pic"/>

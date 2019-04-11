@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from 'react-redux';
 import "./NavButton.css";
 
 const cssClass = "nav-button";
@@ -9,28 +10,27 @@ class NavButton extends Component {
 		fullClassName: cssClass,
 	}
 
-
 	mouseHovered = isHovered => () => {
-		// todo things
-		const addClass = isHovered ? "hover" : "";
+		
+		const addClass = isHovered  ? "hover" : "";
 		this.setState({
 			fullClassName: cssClass + " " + addClass,
 		})
 	}
 
-	mouseDown = isDown => () => {
-
-	}
-
 	render() {
+
+		// If this page is active, it will always show the nav link as activd
+		let className = this.state.fullClassName;
+		if (this.props.reduxState.currentPage === this.props.page) {
+			className = cssClass + " hover";
+		}
 
 		return (
 			<div 
-				className={this.state.fullClassName}
+				className={className}
 				onMouseEnter={this.mouseHovered(true)}
 				onMouseLeave={this.mouseHovered(false)}
-				onMouseDown={this.mouseDown(true)}
-				onMouseUp={this.mouseDown(false)}
 				onClick={this.props.onClick}
 				>
 				{this.props.children}
@@ -39,4 +39,8 @@ class NavButton extends Component {
 	}
 }
 
-export default NavButton;
+const reduxMap = reduxState => {
+	return {reduxState};
+}
+
+export default connect(reduxMap)(NavButton);

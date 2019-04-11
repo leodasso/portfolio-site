@@ -16,16 +16,6 @@ import createSagaMiddleware from 'redux-saga';
 // Create sagaMiddleware
 const sagaMiddleware = createSagaMiddleware();
 
-// Used to store projects returned from the server
-const projects = (state = [], action) => {
-	switch (action.type) {
-		case 'SET_PROJECTS':
-			return action.payload;
-		default:
-			return state;
-	}
-}
-
 // Used to store the project tags (e.g. 'React', 'jQuery', 'Angular', 'Node.js')
 const tags = (state = [], action) => {
 	switch (action.type) {
@@ -36,10 +26,17 @@ const tags = (state = [], action) => {
 	}
 }
 
+const currentPage = (state = 'projects', action) => {
+	switch (action.type) {
+		case 'SET_PAGE': return action.payload;
+		default: return state;
+	}
+}
+
 // Create one store that all components can use
 const storeInstance = createStore(
 	combineReducers({
-		projects,
+		currentPage,
 		tags,
 	}),
 	// Add sagaMiddleware to our store
