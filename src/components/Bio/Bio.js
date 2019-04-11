@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import './Bio.css';
 
-import { Parallax, Background} from 'react-parallax';
 import profilePic from '../../images/leo_profile.jpg';
+import ParallaxContainer from "../ParallaxContainer/ParallaxContainer";
 
 class Bio extends Component {
 
@@ -10,11 +10,7 @@ class Bio extends Component {
 
 		return (
 
-			<>
-				
-			<Parallax
-				strength={400}
-			>
+			<ParallaxContainer>
 				<div className="bio">
 					<img 
 						src={profilePic} 
@@ -22,7 +18,8 @@ class Bio extends Component {
 					<p className="bio-text">
 						Hi, I'm Leo! 
 						<br/><br/>
-						I'm an American software developer with a background in design and games.
+						I'm an American software developer with a background in design and games. I'm branching out into
+						other software areas, specifically full stack development.
 						<br/><br/>
 						I've always been fascinated by computers. I got my first dive into programming in 
 						2002 when my middle school friend showed me that <em>you can actually write code in these graphinc calculators!</em>
@@ -33,13 +30,7 @@ class Bio extends Component {
 						be accomplished with computers - it's important to treat this fascination with care.
 					</p>
 				</div>
-
-				<Background>
-					<div className="bio-bg"></div>
-				</Background>
-			
-			</Parallax>
-			</>
+			</ParallaxContainer>
 		);
 	}
 }

@@ -1,0 +1,11 @@
+.parallax-container {
+    min-height: 400px;
+    margin: 0px auto;
+}
+
+
+.parallax-bg {
+    background-image: url('https://i.imgur.com/3qtZwVX.png');
+    min-height: 2000px;
+    width: 3000px;
+}
