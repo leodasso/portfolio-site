@@ -37,9 +37,9 @@ class Bio extends Component {
 						src="https://docs.google.com/forms/d/e/1FAIpQLSejyzioeY1gqScpnB7IP_TjkmvUIIMOGPTbUeUlHQz-00UeOg/viewform?embedded=true" 
 						width={window.innerWidth - 20}
 						height="807" 
-						frameborder="0" 
-						marginheight="0" 
-						marginwidth="0">
+						frameBorder="0" 
+						marginHeight="0" 
+						marginWidth="0">
 						Loading...
 					</iframe>
 				</div>

@@ -1,0 +1,4 @@
+[] add 'contact' page
+[] add resume download button to 'about' page
+[] final images
+[] footer 'design copyright leo 2019 etc etc'
