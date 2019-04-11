@@ -13,7 +13,7 @@ class Bio extends Component {
 			<>
 				
 			<Parallax
-				strength={170}
+				strength={300}
 			>
 				<div className="bio">
 					<img 

@@ -2,12 +2,13 @@ import React, { Component } from "react";
 import "./Profile.css";
 import Grid from "@material-ui/core/Grid";
 import NavButton from "../NavButton/NavButton";
+import { withRouter } from "react-router-dom";
 
 class Profile extends Component {
 
 
 	sendTo = newRoute => () => {
-		// todo
+		this.props.history.push(newRoute);
 	}
 
 	openLink = url => () => {
@@ -58,4 +59,4 @@ class Profile extends Component {
 	}
 }
 
-export default Profile;
+export default withRouter(Profile);
