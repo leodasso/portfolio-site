@@ -26,7 +26,7 @@ class Project extends Component {
     console.log(this.props.projectData.image);
 
     return (
-      <Grid item sm={12} lg={6}>
+      <Grid item sm={12} md={6}>
 
         <Parallax>
         <div className="card-bg" style={this.cardBgStyle}>

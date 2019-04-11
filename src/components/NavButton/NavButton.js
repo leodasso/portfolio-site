@@ -18,6 +18,8 @@ class NavButton extends Component {
 		})
 	}
 
+
+
 	render() {
 
 		// If this page is active, it will always show the nav link as activd
@@ -28,9 +30,10 @@ class NavButton extends Component {
 
 		return (
 			<div 
-				className={className}
+				className={className + " " + this.props.size}
 				onMouseEnter={this.mouseHovered(true)}
 				onMouseLeave={this.mouseHovered(false)}
+				onMouseUp={this.mouseHovered(false)}
 				onClick={this.props.onClick}
 				>
 				{this.props.children}

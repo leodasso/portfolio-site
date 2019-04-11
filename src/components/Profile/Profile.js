@@ -36,16 +36,22 @@ class Profile extends Component {
 								About
 							</NavButton>
 
-							<NavButton onClick={this.sendTo("/resume")} page="resume">
+							<NavButton onClick={this.openLink("/leo_resume.pdf")} page="resume">
 								Resume
 							</NavButton>
 
-							<NavButton onClick={this.openLink("https://www.linkedin.com/in/leo-dasso/")}>
-								LinkedIn
+							<NavButton 
+								onClick={this.openLink("https://www.linkedin.com/in/leo-dasso/")} 
+								page="linkedin"
+								size="large">
+								<i className="fab fa-linkedin"></i>
 							</NavButton>
 
-							<NavButton onClick={this.openLink("https://github.com/leodasso")}>
-								GitHub
+							<NavButton 
+								onClick={this.openLink("https://github.com/leodasso")} 
+								page="github"
+								size="large">
+								<i className="fab fa-github"></i>
 							</NavButton>
 						</div>
 					</Grid>
