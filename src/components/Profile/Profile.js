@@ -36,10 +36,6 @@ class Profile extends Component {
 								About
 							</NavButton>
 
-							<NavButton onClick={this.sendTo("/contact")} page="contact">
-								Contact
-							</NavButton>
-
 							<NavButton onClick={this.sendTo("/resume")} page="resume">
 								Resume
 							</NavButton>

@@ -32,6 +32,17 @@ class Bio extends Component {
 						be accomplished with computers - it's important to treat this fascination with care.
 					</p>
 				</div>
+				<div>
+					<iframe 
+						src="https://docs.google.com/forms/d/e/1FAIpQLSejyzioeY1gqScpnB7IP_TjkmvUIIMOGPTbUeUlHQz-00UeOg/viewform?embedded=true" 
+						width={window.innerWidth - 20}
+						height="807" 
+						frameborder="0" 
+						marginheight="0" 
+						marginwidth="0">
+						Loading...
+					</iframe>
+				</div>
 			</ParallaxContainer>
 		);
 	}
