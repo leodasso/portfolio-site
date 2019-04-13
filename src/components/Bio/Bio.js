@@ -26,7 +26,7 @@ class Bio extends Component {
 						other software areas, specifically full stack development.
 						<br/><br/>
 						I've always been fascinated by computers. I got my first dive into programming in 
-						2002 when my middle school friend showed me that <em>you can actually write code in these graphinc calculators!</em>
+						2002 when my middle school friend showed me that <em>you can actually write code in these graphing calculators!</em>
 						<br/><br/>
 						In my six years of professional experience in game development, I learned that creating
 						a sustainable working habit is more important than squeezing every last drop of effort from myself
