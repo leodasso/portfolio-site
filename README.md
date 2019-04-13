@@ -4,10 +4,10 @@ This is my website's guts! This site has sections for projects, about, and links
 linkedIn, social media X, social media Y. 
 
 ### Features
-*Fonts from Google Fonts, with the sweet _Permanent Marker_ as the hero font.
-*CSS transition animations
-*Embedded google form for feedback
-*Built to be responsive
+* Fonts from Google Fonts, with the sweet _Permanent Marker_ as the hero font.
+* CSS transition animations
+* Embedded google form for feedback
+* Built to be responsive
 
 ### Screenshots
 ![header preview](https://github.com/leodasso/portfolio-site/blob/master/readme/portfolio_2.png?raw=true)
