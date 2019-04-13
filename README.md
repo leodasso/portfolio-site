@@ -3,6 +3,8 @@
 This is my website's guts! This site has sections for projects, about, and links to github,
 linkedIn, social media X, social media Y. 
 
+[**View the deployed site**](https://www.leodasso.com/)
+
 ### Features
 * Fonts from Google Fonts, with the sweet _Permanent Marker_ as the hero font.
 * CSS transition animations
