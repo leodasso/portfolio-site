@@ -3,6 +3,19 @@
 This is my website's guts! This site has sections for projects, about, and links to github,
 linkedIn, social media X, social media Y. 
 
+### Features
+*Fonts from Google Fonts, with the sweet _Permanent Marker_ as the hero font.
+*CSS transition animations
+*Embedded google form for feedback
+*Built to be responsive
+
+### Screenshots
+![header preview](https://github.com/leodasso/portfolio-site/blob/master/readme/portfolio_2.png?raw=true)
+
+![site project preview](https://github.com/leodasso/portfolio-site/blob/master/readme/portfolio_1.png?raw=true)
+
+![feedback form preview](https://github.com/leodasso/portfolio-site/blob/master/readme/portfolio_3.png?raw=true)
+
 ## Getting Started
 1. Clone the repo to your computer.
 2. In the terminal, navigate to the folder 'portfolio-site' and enter `npm install`
