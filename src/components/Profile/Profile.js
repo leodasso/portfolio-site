@@ -44,14 +44,21 @@ class Profile extends Component {
 								onClick={this.openLink("https://www.linkedin.com/in/leo-dasso/")} 
 								page="linkedin"
 								size="large">
-								<i className="fab fa-linkedin"></i>
+								<i className="fab fa-linkedin" title="LinkedIn"></i>
 							</NavButton>
 
 							<NavButton 
 								onClick={this.openLink("https://github.com/leodasso")} 
 								page="github"
 								size="large">
-								<i className="fab fa-github"></i>
+								<i className="fab fa-github" title="GitHub"></i>
+							</NavButton>
+
+							<NavButton 
+								onClick={this.openLink("https://www.hackerrank.com/leo_dasso")} 
+								page="hackerrank"
+								size="large">
+								<i class="fab fa-hackerrank" title="HackerRank"></i>
 							</NavButton>
 						</div>
 					</Grid>
