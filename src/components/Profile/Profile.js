@@ -35,11 +35,7 @@ class Profile extends Component {
 							<NavButton onClick={this.sendTo("/about")} page="about">
 								About
 							</NavButton>
-
-							<NavButton onClick={this.openLink("/leo_resume.pdf")} page="resume">
-								Resume
-							</NavButton>
-
+							
 							<NavButton 
 								onClick={this.openLink("https://www.linkedin.com/in/leo-dasso/")} 
 								page="linkedin"
